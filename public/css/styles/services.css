@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}
+
+/* *,*::before,*::after{
+  outline: 1px solid lime;
+} */
+body nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  position: fixed;
+  color: white;
+  z-index: 1000;
+  transition: background-color 500ms ease-in 100ms;
+  background-color: #2a2a2a;
+}
+body nav > img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body nav .header-words {
+  flex: 1;
+}
+body nav .header-words ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body nav .header-words ul li {
+  text-transform: uppercase;
+}
+body nav .header-words ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+body nav .header-words ul img {
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main {
+  --padding-inline: 15rem;
+}
+body main .banner {
+  padding-block: 2rem;
+  padding-inline-start: var(--padding-inline);
+  background-color: #F0F0F0;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+body main .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .main > p {
+  padding-block: 5rem;
+  font-size: 1.2rem;
+  color: rgb(76, 74, 74);
+  font-family: "Lato" sans-serif;
+  padding-inline: var(--padding-inline);
+  text-wrap: balance;
+  text-wrap: pretty;
+}
+body main .main .main-content h2 {
+  text-align: center;
+}
+body main .main .main-content .service-container {
+  display: flex;
+  gap: 2rem;
+  padding-block: 2.7rem;
+}
+body main .main .main-content .service-container .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  --spacer: .9rem;
+}
+body main .main .main-content .service-container .services > img {
+  width: 120px;
+  height: 150px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body main .main .main-content .service-container .services figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding-block-end: var(--spacer);
+  width: -moz-max-content;
+  width: max-content;
+  outline: 1px solid #e0382d;
+}
+body main .main .main-content .service-container .services figure h2 {
+  background-color: #e0382d;
+  padding-block: 1.2rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+body main .main .main-content .service-container .services figure img {
+  width: 320px;
+  height: 420px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-inline: var(--spacer);
+}
+body main .main .main-content .service-container .services figure figcaption {
+  width: 320px;
+  margin-inline: var(--spacer);
+  color: #D9043D;
+  height: 70px;
+  text-align: center;
+  line-height: 1.3rem;
+}
+body main .main .main-content .service-container .services figure p {
+  width: 320px;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 70px;
+  margin-inline: var(--spacer);
+  color: #D9043D;
+}
+body main .main .main-content .service-container .services figure button {
+  padding-block: 1rem;
+  padding-inline: 2.2rem;
+  background-color: transparent;
+  margin-inline: 0.9rem;
+  color: #e0382d;
+  outline: 1px solid #e0382d;
+  border: none;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+body main .main .main-content .service-container .services figure button:hover {
+  background-color: #e0382d;
+  color: whitesmoke;
+}
+body main .main .main-content .service-container .services:nth-child(2) figure,
+body main .main .main-content .service-container .services:nth-child(3) figure {
+  outline: 1px solid #0468BF;
+}
+body main .main .main-content .service-container .services:nth-child(2) figure h2,
+body main .main .main-content .service-container .services:nth-child(3) figure h2 {
+  background-color: #0468BF;
+}
+body main .main .main-content .service-container .services:nth-child(2) figure figcaption,
+body main .main .main-content .service-container .services:nth-child(2) figure p,
+body main .main .main-content .service-container .services:nth-child(3) figure figcaption,
+body main .main .main-content .service-container .services:nth-child(3) figure p {
+  color: #0468BF;
+}
+body main .main .main-content .service-container .services:nth-child(2) figure button,
+body main .main .main-content .service-container .services:nth-child(3) figure button {
+  outline: 1px solid #0468BF;
+  color: #0468BF;
+}
+body main .main .main-content .service-container .services:nth-child(2) figure button:hover,
+body main .main .main-content .service-container .services:nth-child(3) figure button:hover {
+  background-color: #0468BF;
+  color: #F0F0F0;
+}
+body main .main .service-sergeants {
+  padding-block: 4rem;
+}
+body main .main .service-sergeants h2 {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+body main .main .service-sergeants .container-flex {
+  display: flex;
+  gap: 2rem;
+}
+body main .main .service-sergeants .container-flex figure img {
+  width: 240px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main .service-sergeants .container-flex figure figcaption {
+  padding-block: 0.3rem;
+  text-align: center;
+  color: #3285ce;
+  font-size: 1.1rem;
+}
+body footer {
+  display: flex;
+  gap: 5rem;
+  padding-inline: 7rem;
+  padding-block: 4rem;
+  background-color: #3A6391;
+  color: white;
+}
+body footer h3 {
+  text-transform: uppercase;
+  padding-block-end: 1.2rem;
+  font-size: 1.3rem;
+}
+body footer li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+}
+body footer dt {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: wheat;
+}
+body footer dd {
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  padding-block-end: 1.2rem;
+}
+body #contact-us {
+  background-color: #121724;
+  color: white;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+body #contact-us a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+body #contact-us .adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  font-size: 1.2rem;
+}
+body #contact-us .adress ul li {
+  padding-bottom: 1rem;
+}
+body #contact-us .adress ul:nth-child(2) li a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+}/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,61 @@
+@import './partials/resets';
+
+body{
+    @import './partials/nav';
+
+    main{
+      --padding-inline: 15rem;
+      --padding: 3rem;
+      .banner{
+        padding-block: 2rem;
+        padding-inline-start: var(--padding-inline);
+        background-color:  #F0F0F0;
+        font-size: 2rem;
+        //font-weight: 100;
+        font-family: "Raleway", sans-serif;
+       }
+
+       .filler{
+        padding-inline: var(--padding);
+        padding-block: 2rem;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-wrap: balance;
+        text-wrap: pretty;
+        gap: 1.1rem;
+        width: 125ch;
+        font-family: "Lato" sans-serif;
+       }
+
+       .commisioned,
+       .non-commisioned{
+        
+        display: flex;
+        flex-direction: column;
+        padding-inline: var(--padding);
+        padding-block: 2rem;
+        
+        .services{
+         
+            span{
+                display: inline-block;
+                padding: 1.2rem 2rem;
+                background-color: #868383;
+              }
+              span[data-active]{
+               
+                background-color: #F0F0F0;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+              }
+        }
+
+       }
+
+
+    }
+
+    @import "./partials/footer";
+}

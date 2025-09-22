@@ -1,0 +1,45 @@
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.2rem;
+    padding-block: 1rem;
+    position: fixed;
+    color: white;
+    z-index: 1000;
+    transition: background-color 500ms ease-in 100ms;
+    background-color: #2a2a2a;
+
+    & > img {
+        width: 60px;
+        object-fit: cover;
+    }
+
+    .header-words {
+        flex: 1;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+            font-size: 1.2rem;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+
+            li {
+                text-transform: uppercase;
+
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+
+            img {
+                height: 60px;
+                object-fit: cover;
+            }
+        }
+    }
+}

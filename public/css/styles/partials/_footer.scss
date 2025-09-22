@@ -1,0 +1,74 @@
+footer{
+  display: flex;
+  gap: 5rem;
+  padding-inline: 7rem;
+  padding-block: 4rem;
+  background-color: #3A6391;
+  color: white;
+
+  h3{
+    text-transform: uppercase;
+    padding-block-end: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  li{
+    margin-bottom: .8rem;
+    font-size: 1.1rem;
+    letter-spacing: .02rem;
+  }
+
+  dt{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: wheat;
+  }
+
+  dd{
+    font-size: 1.1rem;
+    letter-spacing: .02rem;
+    padding-block-end: 1.2rem;
+  }
+}
+
+#contact-us {
+  background-color: #121724;
+  color: white;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  a {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+  .adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    font-size: 1.2rem;
+
+    ul {
+      li {
+        padding-bottom: 1rem;
+
+      }
+    }
+
+    ul:nth-child(2) {
+      li a {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
+}

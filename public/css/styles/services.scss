@@ -1,0 +1,11 @@
+@import './partials/resets';
+
+/* *,*::before,*::after{
+  outline: 1px solid lime;
+} */
+
+body{
+  @import './partials/nav';
+  @import './partials/services/main';
+  @import './partials/footer';
+}

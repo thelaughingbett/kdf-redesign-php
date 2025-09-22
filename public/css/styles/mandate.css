@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}
+
+/* *,*::before,*::after{
+  outline: 1px solid lime;
+} */
+body nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  position: fixed;
+  color: white;
+  z-index: 1000;
+  transition: background-color 500ms ease-in 100ms;
+  background-color: #2a2a2a;
+}
+body nav > img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body nav .header-words {
+  flex: 1;
+}
+body nav .header-words ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body nav .header-words ul li {
+  text-transform: uppercase;
+}
+body nav .header-words ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+body nav .header-words ul img {
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+body header figure {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity ease-in 900ms 100ms;
+}
+body header figure figcaption {
+  position: absolute;
+  bottom: 15rem;
+  left: 5rem;
+  width: 85ch;
+  color: white;
+  padding-inline: 0.8rem;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 1rem 5rem;
+}
+body header figure figcaption h2 {
+  font-size: 3.5rem;
+  color: black;
+}
+body header figure figcaption p {
+  font-size: 1.5rem;
+  padding-block-start: 1rem;
+  color: whitesmoke;
+}
+body header figure img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header figure[data-active] {
+  opacity: 1;
+}
+body header figure img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body main .corevalues {
+  padding-block: 3rem;
+  padding-inline: 7rem;
+}
+body main .corevalues h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 4rem;
+}
+body main .corevalues figure {
+  display: flex;
+}
+body main .corevalues figure img {
+  width: 50%;
+  height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  flex: 1;
+}
+body main .corevalues figure figcaption {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+body main .corevalues figure figcaption h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+body main .corevalues figure figcaption p {
+  text-align: center;
+  font-size: 1.3rem;
+  width: 45ch;
+}
+body main .corevalues figure:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+body main .obligation {
+  background-color: #13182b;
+  color: white;
+  padding-block: 5rem;
+  padding-inline: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main .obligation h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body main .obligation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main .obligation ul li {
+  font-size: 16px;
+  font-family: lato, sans-serif;
+}
+body main .obligation ul li figure img {
+  width: 40px;
+  aspect-ratio: 1;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body main .obligation ul li figure figcaption {
+  width: 55ch;
+  text-wrap: balance;
+  text-wrap: pretty;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body main .feedback {
+  background-color: #13182b;
+  color: white;
+  text-align: center;
+}
+body main .feedback > h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 2rem;
+}
+body main .feedback .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  gap: 2rem;
+}
+body main .feedback .grid div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #13182b;
+  padding-block: 1rem;
+}
+body main .feedback .grid div h2 {
+  background-color: #13182b;
+  color: white;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+body main .feedback .grid div span {
+  padding-inline: 2rem;
+}
+body footer {
+  display: flex;
+  gap: 5rem;
+  padding-inline: 7rem;
+  padding-block: 4rem;
+  background-color: #3A6391;
+  color: white;
+}
+body footer h3 {
+  text-transform: uppercase;
+  padding-block-end: 1.2rem;
+  font-size: 1.3rem;
+}
+body footer li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+}
+body footer dt {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: wheat;
+}
+body footer dd {
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  padding-block-end: 1.2rem;
+}
+body #contact-us {
+  background-color: #121724;
+  color: white;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+body #contact-us a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+body #contact-us .adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  font-size: 1.2rem;
+}
+body #contact-us .adress ul li {
+  padding-bottom: 1rem;
+}
+body #contact-us .adress ul:nth-child(2) li a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+}/*# sourceMappingURL=mandate.css.map */

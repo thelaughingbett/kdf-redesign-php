@@ -1,0 +1,350 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}
+
+body nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  position: fixed;
+  color: white;
+  z-index: 1000;
+  transition: background-color 500ms ease-in 100ms;
+  background-color: #2a2a2a;
+}
+body nav > img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body nav .header-words {
+  flex: 1;
+}
+body nav .header-words ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body nav .header-words ul li {
+  text-transform: uppercase;
+}
+body nav .header-words ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+body nav .header-words ul img {
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+body header figure {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity ease-in 900ms 100ms;
+}
+body header figure figcaption {
+  position: absolute;
+  bottom: 15rem;
+  left: 5rem;
+  width: 85ch;
+  color: white;
+  padding-inline: 0.8rem;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 1rem 5rem;
+}
+body header figure figcaption h2 {
+  font-size: 3.5rem;
+  color: black;
+}
+body header figure figcaption p {
+  font-size: 1.5rem;
+  padding-block-start: 1rem;
+  color: whitesmoke;
+}
+body header figure img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header figure[data-active] {
+  opacity: 1;
+}
+body main .banner {
+  --height: 85vh;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-inline: 3rem;
+  padding-block: 4rem;
+  position: relative;
+  height: var(--height);
+}
+body main .banner p {
+  width: 65ch;
+  font-size: 1.5rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: rgba(0, 0, 0, 0.586);
+  padding-inline: 3rem;
+  padding-block: 4rem;
+}
+body main .banner p span {
+  font-size: 3rem;
+  font-weight: 900;
+  display: block;
+  color: wheat;
+}
+body main .banner video {
+  width: 100vw;
+  height: var(--height);
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body main .banner > span {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+body main .leadership {
+  background-image: url("../../../images/kdf-flag-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-inline: 1rem;
+  padding-top: 2.8rem;
+}
+body main .leadership fieldset {
+  padding-inline: 2rem;
+  padding-block: 9rem;
+  border: none;
+  border-top: 2px solid white;
+}
+body main .leadership fieldset legend {
+  text-align: center;
+  align-self: center;
+  font-size: 56px;
+  color: white;
+  font-weight: 700;
+  padding-inline: 1.3rem;
+}
+body main .leadership fieldset .defence-leadership {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+body main .leadership fieldset .defence-leadership figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  color: wheat;
+}
+body main .leadership fieldset .defence-leadership figure img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .leadership fieldset .defence-leadership figure figcaption {
+  width: 35ch;
+  text-wrap: pretty;
+  text-align: center;
+}
+body main .leadership fieldset .defence-leadership figure:nth-child(1) {
+  grid-column: span 4;
+}
+body main .leadership fieldset .defence-leadership figure:nth-child(1) img {
+  width: 350px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .leadership fieldset .service-leadership {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+body main .leadership fieldset .service-leadership figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: wheat;
+}
+body main .leadership fieldset .service-leadership figure figcaption {
+  text-align: center;
+  width: 45ch;
+}
+body main .leadership fieldset .services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+body main .leadership fieldset .services figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: wheat;
+}
+body main .leadership fieldset .services figure figcaption {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+body .news {
+  padding-block: 1rem;
+}
+body .news h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+body .news .news-container {
+  display: flex;
+  padding: 2rem 5rem;
+  gap: 1.3rem;
+}
+body .news .news-container figure {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .news .news-container figure h3 {
+  height: 4rem;
+  font-size: 1rem;
+}
+body .news .news-container figure img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .news .news-container figure figcaption {
+  height: 120px;
+  color: rgb(100, 96, 96);
+  font-size: 1.08rem;
+}
+body .news .news-container figure button {
+  width: 100px;
+  height: 2.2rem;
+  color: whitesmoke;
+  background-color: #3A6391;
+  justify-self: flex-start;
+  outline: none;
+  border: none;
+}
+body footer {
+  display: flex;
+  gap: 5rem;
+  padding-inline: 7rem;
+  padding-block: 4rem;
+  background-color: #3A6391;
+  color: white;
+}
+body footer h3 {
+  text-transform: uppercase;
+  padding-block-end: 1.2rem;
+  font-size: 1.3rem;
+}
+body footer li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+}
+body footer dt {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: wheat;
+}
+body footer dd {
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  padding-block-end: 1.2rem;
+}
+body #contact-us {
+  background-color: #121724;
+  color: white;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+body #contact-us a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+body #contact-us .adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  font-size: 1.2rem;
+}
+body #contact-us .adress ul li {
+  padding-bottom: 1rem;
+}
+body #contact-us .adress ul:nth-child(2) li a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+}
+body::-webkit-scrollbar, body::-webkit-scrollbar-track, body::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}/*# sourceMappingURL=index.css.map */

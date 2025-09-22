@@ -1,0 +1,92 @@
+@import "./partials/resets";
+
+/* *,*::before,*::after{
+  outline: 1px solid lime;
+} */
+
+body {
+  a {
+    color: white;
+  }
+
+  header {
+    position: relative;
+    height: 330px;
+    overflow-y: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(12, 11, 11, 0.345);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-block: 1rem;
+      flex-direction: column;
+      gap: 0.4rem;
+      color: white;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+
+      h2 {
+        font-size: 4rem;
+        color: aliceblue;
+      }
+    }
+  }
+
+  main {
+    section {
+      iframe {
+        width: 100%;
+      }
+    }
+
+    fieldset {
+      padding-block: 5rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: none;
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        gap: 1rem;
+
+        input {
+          width: 200px;
+          padding-inline: 0.2rem;
+          padding-block: 0.4rem;
+          outline: none;
+        }
+
+        input::placeholder {
+          text-transform: capitalize;
+        }
+
+        textarea {
+          width: 420px;
+          height: 200px;
+          outline: none;
+          padding: 0.4rem;
+        }
+
+        input[type="submit"] {
+          width: 100px;
+          height: 40px;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  @import "./partials/footer";
+}

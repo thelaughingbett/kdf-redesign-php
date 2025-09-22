@@ -1,0 +1,148 @@
+main {
+    .banner {
+        --height: 85vh;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding-inline: 3rem;
+        padding-block: 4rem;
+        position: relative;
+        height: var(--height);
+        // background-image: linear-gradient(to right, black,white, red,white,  green);
+
+        p {
+            width: 65ch;
+            font-size: 1.5rem;
+            backdrop-filter: blur(10px);
+            color: rgba(0, 0, 0, 0.586);
+            padding-inline: 3rem;
+            padding-block: 4rem;
+
+            span {
+                font-size: 3rem;
+                font-weight: 900;
+                display: block;
+                color: wheat;
+            }
+        }
+
+        video {
+            width: 100vw;
+            height: var(--height);
+            object-fit: fill;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        & > span {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+        }
+    }
+
+    .leadership {
+        background-image: url("../../../images/kdf-flag-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-inline: 1rem;
+        padding-top: 2.8rem;
+
+        fieldset {
+            padding-inline: 2rem;
+            padding-block: 9rem;
+            border: none;
+            border-top: 2px solid white;
+
+            legend {
+                text-align: center;
+                align-self: center;
+                font-size: 56px;
+                color: white;
+                font-weight: 700;
+                padding-inline: 1.3rem;
+            }
+
+            .defence-leadership {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 12px;
+                    color: wheat;
+
+                    img {
+                        width: 200px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+
+                    figcaption {
+                        width: 35ch;
+                        text-wrap: pretty;
+                        text-align: center;
+                    }
+                }
+
+                figure:nth-child(1) {
+                    grid-column: span 4;
+
+                    img {
+                        width: 350px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .service-leadership {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    color: wheat;
+                    figcaption {
+                        text-align: center;
+                        width: 45ch;
+                    }
+                }
+            }
+
+            .services {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    color: wheat;
+
+                    figcaption {
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

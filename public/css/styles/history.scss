@@ -1,0 +1,245 @@
+@import './partials/resets';
+
+body{
+    @import './partials/nav';
+
+    main{
+
+      --padding-inline: 15rem;
+      .banner{
+          padding-block: 2rem;
+          padding-inline-start: var(--padding-inline);
+          background-color:  #F0F0F0;
+          font-size: 2rem;
+          //font-weight: 100;
+          font-family: "Raleway", sans-serif;
+        }
+
+        .history{
+        
+          h1{
+            padding-block: 2rem;
+            padding-inline-start: var(--padding-inline);
+            // background-color:  #F0F0F0;
+            font-size: 2rem;
+            //font-weight: 100;
+            font-family: "Raleway", sans-serif;
+            border-bottom: 3px solid black
+          }
+
+          figure{
+            padding-block: 2rem;
+            padding-inline: 3rem;
+            display: flex;
+            gap: 2rem;
+
+            img{
+              width: 700px;
+              aspect-ratio:  1  ;
+              object-fit: fill;
+            }
+
+            figcaption{
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              color:#585858;
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        .CIC{
+          padding-inline: 1rem;
+
+          h1{
+            text-wrap: balance;
+            text-wrap: pretty;
+            padding-block: 2rem;
+            text-align: center;
+            background-color:  #F0F0F0;
+            font-size: 2rem;
+            //font-weight: 100;
+            font-family: "Raleway", sans-serif;
+          }
+
+          // h1{
+          //   padding-block: 2rem;
+          //   padding-inline-start: var(--padding-inline);
+          //   // background-color:  #F0F0F0;
+          //   font-size: 2rem;
+          //   //font-weight: 100;
+          //   font-family: "Raleway", sans-serif;
+          //   border-bottom: 3px solid black
+          // }
+
+          .yearsofservice{
+            padding-block-start: 1rem;
+           
+            span{
+              display: inline-block;
+              padding: 1.2rem 2rem;
+              background-color: #868383;
+            }
+            span[data-active]{
+             
+              background-color: #F0F0F0;
+              border-top-right-radius: 5px;
+              border-top-left-radius: 5px;
+            }
+          }
+
+          figure{
+            background-color: #F0F0F0;
+            padding-block: 2rem;
+            padding-inline: 3rem;
+            display: flex;
+            gap: 2rem;
+
+            img{
+              width: 900px;
+              width: 100%;
+              object-fit: fill;
+            }
+
+            figcaption{
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              color:#585858;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        
+        .Ministers{
+          padding-inline: 1rem;
+
+          h1{
+            text-wrap: balance;
+            text-wrap: pretty;
+            padding-block: 2rem;
+            text-align: center;
+            background-color:  #F0F0F0;
+            font-size: 2rem;
+            //font-weight: 100;
+            font-family: "Raleway", sans-serif;
+          }
+
+          // h1{
+          //   padding-block: 2rem;
+          //   padding-inline-start: var(--padding-inline);
+          //   // background-color:  #F0F0F0;
+          //   font-size: 2rem;
+          //   //font-weight: 100;
+          //   font-family: "Raleway", sans-serif;
+          //   border-bottom: 3px solid black
+          // }
+
+          .yearsofservice{
+            padding-block-start: 1rem;
+           
+            span{
+              display: inline-block;
+              padding: 1.2rem 2rem;
+              background-color: #868383;
+            }
+            span[data-active]{
+             
+              background-color: #F0F0F0;
+              border-top-right-radius: 5px;
+              border-top-left-radius: 5px;
+            }
+          }
+
+          figure{
+            background-color: #F0F0F0;
+            padding-block: 2rem;
+            padding-inline: 3rem;
+            display: flex;
+            gap: 2rem;
+
+            img{
+              width: 900px;
+              width: 100%;
+
+              object-fit: fill;
+            }
+
+            figcaption{
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              color:#585858;
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        .CDF{
+          padding-inline: 1rem;
+
+          h1{
+            text-wrap: balance;
+            text-wrap: pretty;
+            padding-block: 2rem;
+            text-align: center;
+            background-color:  #F0F0F0;
+            font-size: 2rem;
+            //font-weight: 100;
+            font-family: "Raleway", sans-serif;
+          }
+
+          // h1{
+          //   padding-block: 2rem;
+          //   padding-inline-start: var(--padding-inline);
+          //   // background-color:  #F0F0F0;
+          //   font-size: 2rem;
+          //   //font-weight: 100;
+          //   font-family: "Raleway", sans-serif;
+          //   border-bottom: 3px solid black
+          // }
+
+          .yearsofservice{
+            padding-block-start: 1rem;
+           
+            span{
+              display: inline-block;
+              padding: 1.2rem 2rem;
+              background-color: #868383;
+            }
+            span[data-active]{
+             
+              background-color: #F0F0F0;
+              border-top-right-radius: 5px;
+              border-top-left-radius: 5px;
+            }
+          }
+
+          figure{
+            background-color: #F0F0F0;
+            padding-block: 2rem;
+            padding-inline: 3rem;
+            display: flex;
+            gap: 2rem;
+
+            img{
+              width: 900px;
+              width: 100%;
+              object-fit: fill;
+            }
+
+            figcaption{
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              color:#585858;
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+    }
+
+    @import './partials/footer';
+  }
